@@ -13,8 +13,8 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-center">Frequently asked questions</h2>
-        <div className="mt-8 divide-y divide-gray-200 dark:divide-neutral-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/60 backdrop-blur">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-center gradient-text">Frequently asked questions</h2>
+        <div className="mt-8 divide-y divide-gray-200 dark:divide-neutral-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-neutral-800 card-surface">
           {items.map((it, i) => (
             <div key={i}>
               <button className="w-full text-left px-6 py-4 hover:bg-gray-50/60 dark:hover:bg-neutral-900/80 transition flex items-center justify-between" onClick={() => setOpen(open===i ? null : i)}>
